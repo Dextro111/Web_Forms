@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEXTRO INT'L REGISTRATION FORM</title>
+        <link href="INTL-REG.css" type="text/css" rel="stylesheet">
+        
+        <script type="text/javascript" src="INTL_REG.js">
+                
+        </script>
+    </head>
+
+    <body>
+        <h1>DEXTRO INTERNATIONAL REGISTRATION FORM</h1>
+        
+        <div class="Upper">
+        <fieldset>
+        <legend id="BIO-DETAILS">
+            BIO-DETAILS
+        </legend>
+
+        <form name="Bioform10"  class="BioForm" onsubmit="return(Validate())">
+        
+        <div id="Bionames"> 
+            <label for="name">
+                    First Name
+            </label>
+                    <input name="FirstName" class="name" type="text" placeholder="First Name" value="" minlength="3" maxlength="9" required="required">
+            <span for="name">
+                    Last name
+            </span>
+                    <input name="LastName" class="name" type="text" value="" placeholder="Last Name" minlength="3" maxlength="9">
+        </div>
+        <div id="BioDOBS">
+            <label for="DOB">
+                Date Of Birth 
+            </label>
+                <input name="Birth" class="name" type="date" placeholder="Date Of Birth" value="" min="2000-01-01" max="2025-01-01">
+            
+        </div>
+        <div class="Bioradio1">
+            <label class="gender">
+                Gender
+            </label>
+                Male<input name="gender" type="radio" value="Male" class="radio" checked="checked">
+                Female<input name="gender" type="radio" value="Female" class="radio">
+        </div>
+        <div id="Bioparent">
+            <label for="parent">
+                Parent Name
+            </label>
+                <input name="parent" class="name" type="text" placeholder="Parent/Guardian Name" value="" minlength="3" maxlength="20">   
+        </div>
+        <div id="Bioemail">
+            <label for="email">
+                Email Address
+            </label>
+                <input name="email" type="email" class="name" placeholder="Email Address" value="" onsubmit="validateEmail()" >
+        </div>
+        <div class="Bioradio1">
+            <label class="gender">
+                Nationality
+            </label>
+                Nigerian<input type="radio" name="Nationality" value="Nigerian" class="radio">
+                Non-Nigerian<input type="radio" name="Nationality" value="Non" class="radio" checked="checked">
+            
+        </div>
+        <div id="Biostate">
+            <label for="state">
+                State Of Origin
+            </label>
+                <select class="select" name="state" >
+                    <option aria-placeholder="State Of Origin" disabled selected value="-1">Enter Your State Of Origin</option>
+                    <option value="Abia">Abia State</option>
+                    <option value="Adamawa">Adamawa State</option>
+                    <option value="Akwa-Ibom">Akwa-Ibom State</option>
+                    <option value="Anambara">Anambara State</option>
+                    <option value="Bauchi">Bauchi State</option>
+                    <option value="Bayelsa">Bayelsa State</option>
+                    <option value="Benue">Benue State</option>
+                    <option value="Bornu">Bornu State</option>
+                    <option value="Cross-RIver">Cross-RIver State</option>
+                    <option value="Delta">Delta State</option>
+                    <option value="Ebonyi">Ebonyi State</option>
+                    <option value="Edo">Edo State</option>
+                    <option value="Ekiti">Ekiti State</option>
+                    <option value="Enugu">Enugu State</option>
+                    <option value="Gombe">Gombe State</option>
+                    <option value="Imo">Imo State</option>
+                    <option value="Jigawa">Jigawa State</option>
+                    <option value="Kaduna">Kaduna State</option>
+                    <option value="Kano">Kano State</option>
+                    <option value="Kastina">Kastina State</option>
+                    <option value="Kebbi">Kebbi State</option>
+                    <option value="Kogi">Kogi State</option>
+                    <option value="Kwara">Kwara State</option>
+                    <option value="Lagos">Lagos State</option>
+                    <option value="Nassawara">Nassawara State</option>
+                    <option value="Niger">Niger State</option>
+                    <option value="Ogun">Ogun State</option>
+                    <option value="Ondo">Ondo State</option>
+                    <option value="Oyo">Oyo State</option>
+                    <option value="Plateau">Plateau State</option>
+                    <option value="Rivers">Rivers State</option>
+                    <option value="Sokoto">Sokoto State</option>
+                    <option value="Taraba">Taraba State</option>
+                    <option value="Yobe">Yobe State</option>
+                    <option value="Zamfara">Zamfara State</option>
+                    <option value="FCT">F.C.T Abuja</option>
+                </select>
+                
+                <span for="lga">
+                    L.G.A
+                </span>
+                    <select class="select" name="Lga">
+                        <option aria-placeholder="L.G.A" disabled selected value="-1">Local Government Area</option>
+                        <option value="Abua">Abua-Odual</option>
+                        <option value="Ahoada-E">Ahoada-East</option>
+                        <option value="Ahoada-W">Ahoada-West</option>
+                        <option value="Akuku">Akuku-Toru</option>
+                        <option value="Andoni">Andoni</option>
+                        <option value="Asari">Asari-Toru</option>
+                        <option value="Bonny">Bonny</option>
+                        <option value="Degema">Degema</option>
+                        <option value="Eleme">Eleme</option>
+                        <option value="Emohua">Emohua</option>
+                        <option value="Etche">Etche</option>
+                        <option value="Gokana">Gokana</option>
+                        <option value="Ikwerre">Ikwerre</option>
+                        <option value="Khana">Khana</option>
+                        <option value="Obio">Obio-Akpor</option>
+                        <option value="Ogba">Ogba-Egbema-Ndoni</option>
+                        <option value="Ogu">Ogu-Bolu</option>
+                        <option value="Okrika">Okrika</option>
+                        <option value="Omuma">Omuma</option>
+                        <option value="Opobo">Opobo-Nkoro</option>
+                        <option value="Oyigbo">Oyigbo</option>
+                        <option value="Port">Port-Harcourt</option>
+                        <option value="Tai">Tai</option>
+                    </select>
+        </div>
+        <div id="Bioaddress">
+            <label for="Address">
+                Address
+            </label>
+                <input class="name" type="text" placeholder="House Address" value="" name="Address" minlength="10" maxlength="20">
+        </div>
+        <div id="Biophone">
+            <label for="phone">
+                Telephone No.
+            </label>
+                <input name="phone" class="name" type="tel" placeholder="Telephone No" value="" minlength="11">
+            
+        </div>
+        <div id="Biohobby">
+            <label class="gender">
+                Hobby:
+            </label>
+                Dancing<input type="checkbox" name="dance" value="Dancing" class="checkbox">
+                Sketching<input type="checkbox" name="sketch" value="Sketching" class="checkbox">
+                Football<input type="checkbox" name="foot" value="Football" class="checkbox">
+                Hunting<input type="checkbox" name="hunt" value="Hunting" class="checkbox">
+                Baking<input type="checkbox" name="bake" value="Baking" class="checkbox">
+                Video Gaming<input type="checkbox" name="VG" value="Video Gaming" class="checkbox">
+            </div>
+        <div class="reset">
+            <input type="reset" value="RESET" class="btn">
+        </div>
+
+        <div id="right">
+            <input type="submit" value="SUBMIT FORM" class="btn" >
+        </div>
+                </form>
+            </fieldset>
+        </div>
+
+
+        <div class="Upper">
+            <fieldset>
+                <legend id="Academic-Details">
+                    ACADEMIC DETAILS
+                </legend>
+                <form name="Acaform" class="BioForm2" action="" onsubmit="return(Validate()) //calling the validate func "> 
+                <div id="Primary">
+                    <label class="aca">
+                        Primary Education
+                    </label>
+                    <br/>
+                        <label class="atwo">
+                            SCHOOL OF CHOICE
+                        </label>
+                        <select name="Primary" class="select">
+                            <option aria-placeholder="Choose Your School" disabled selected value="-1">Choose Your School</option>
+                            <option value="Gojehota">Gojehota</option>
+                            <option value="St.Scholarstica">St.Scholarstica</option>
+                            <option value="Golan">Golan Height Academy</option> 
+                        </select>
+                    
+                    
+                    <label class="gentle">
+                        Certificate:
+                    </label>
+                        First School Leaving Certificate<input type="radio" name="certificate" class="radio" value="FSLC" >
+                        No Certificate<input type="radio" name="certificate" class="radio" value="none" checked="checked">
+                </div>
+                <br/>
+                <div id="Secondary">
+                    <label class="aca">
+                        Secondary Education
+                    </label>
+                    <br/>
+                        <label class="atwo">
+                        COLLEGE OF CHOICE
+                        </label>
+                        <select name="Secondary" class="select">
+                            <option aria-placeholder="Choose Your College" disabled selected value="-1">Choose Your School</option>
+                            <option value="La' Pierre">La' Pierre Int'l</option>
+                            <option value="Icast">International College Of Arts And Science</option>
+                            <option value="Golan">Golan Height Academy</option> 
+                        </select>
+                    
+                    
+                    <label class="gentle">
+                        Certificate:
+                    </label>
+                        WAEC<input type="radio" name="sec" class="radio" value="Waec">
+                        NECO<input type="radio" name="sec" class="radio" value="NECO">
+                        G.C.E <input type="radio" name="sec" class="radio" value="GCE" checked="checked">
+                </div>
+                <br/>
+                <div id="Tertiary">
+                    <label class="aca">
+                        Tertiary Institution
+                    </label>
+                    <br/>
+                        <label class="atwo">
+                        INSTITUTION OF CHOICE
+                        </label>
+                        <select name="Tertiary" class="select">
+                            <option aria-placeholder="Choose Your Institution" disabled selected value="-1">Choose Your Institution</option>
+                            <option value="Ust">University Of Science And Technology</option>
+                            <option value="Port">University Of Port Harcourt</option>
+                            <option value="Delsu">Delta State University</option>
+                            <option value="Unilag">University Of Lagos State</option>
+                            <option value="Ahmadu">Ahmadu Bello University</option>
+                        </select>
+                    
+                    <label class="gentle">
+                        Degree:
+                    </label>
+                        B.S.C<input type="radio" name="ter" class="radio" value="BSC" >
+                        Masters<input type="radio" name="ter" class="radio" value="Masters" checked="checked">
+                        PHD<input type="radio" name="ter" class="radio" value="PHD">
+                </div>
+                <br/>
+                <div id="Courses">
+                    <label class="aca">
+                        Course
+                    </label>
+                    <br/>
+                        <label class="atwo">
+                            COURSE OF CHOOSING
+                        </label>
+                        <select name="Course" class="select">
+                            <option aria-placeholder="Choose" disabled selected value="-1">Choose Your Course</option>
+                            <option value="com">Computer Science</option>
+                            <option value="med">Medicine And Surgery</option>
+                            <option value="fish">Fishery</option>
+                            <option value="avia">Aviation</option>
+                            <option value="geo">Geology</option>
+                        </select>
+                    
+                    
+                    <label class="gentle">
+                        Grade:
+                    </label>
+                        1st Class<input type="radio" name="Grade" class="radio" value="1st" checked="checked">
+                        2nd Class Upper<input type="radio" name="Grade" class="radio" value="2nd-upper">
+                        2nd Class Lower<input type="radio" name="Grade" class="radio" value="2nd-lower">
+                        3rd Class<input type="radio" name="Grade" class="radio" value="3rd">
+                        Pass<input type="radio" name="Grade" class="radio" value="Pass">
+                        Fail<input type="radio" name="Grade" class="radio" value="Fail" >
+                </div>
+                <br/>
+                <div id="Others">
+                    <label class="aca">
+                        Other Optional Requirements
+                    </label>
+                    <br/>
+                    <br/>
+                        National Youth Service Group(NYSC)<input type="radio" name="other" class="radio" value="NYSC">
+                        Military Experience <input type="radio" name="other" class="radio" value="Military" checked="checked">
+                </div>
+
+                <div class="reset">
+                    <input type="reset" value="RESET" class="btn">
+                </div>
+                
+                <div id="right">
+                    <input type="submit" value="SUBMIT FORM" class="btn" >
+                </div>
+               
+            </form>
+                
+            </fieldset>
+
+        </div>
+    </body>
+</html>
