@@ -62,6 +62,7 @@ legend{
     display: inline-block;
     text-align: left;
     width: 100px;
+    margin-right: 10px;
 }
 label{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
